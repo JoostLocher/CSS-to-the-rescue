@@ -5,10 +5,10 @@
 **Assignment:** <br>Control panel
 
 **Concept:** <br>Optie 1: Donkey Kong Multiscreen. Door de handheld multiscreen-console geïnspireerd, wil ik deze console (3D) namaken, waarbij je met een paar buttons, zoals Jump, Walk en Game A/B, DK op de twee schermen kunt besturen.
-<img src="images/DK.jpeg" width="300" height="150">
+<img src="images/DK.jpeg" width="300" height="200">
 
 Optie 2: Pokédex Console: Een console met één scherm waarop je één of meerdere Pokémon ziet. Met behulp van buttons en/of een slider kun je de achtergrond (regio's) en Pokémon wisselen.
-<img src="images/pokedex.jpg" width="300" height="150">
+<img src="images/pokedex.jpg" width="300" height="200">
 
 **Uiteindelijke keuze:**<br> Na de feedback op vrijdag van week 1 heb ik ervoor gekozen om met de eerste optie (Donkey Kong Multiscreen) verder te gaan, maar dan in de stijl van de tweede optie, waarin meer harde kleuren en schaduwen werden gebruikt.
 
@@ -26,7 +26,7 @@ Optie 2: Pokédex Console: Een console met één scherm waarop je één of meerd
 **Voortgang:**<br>
 Deze week ben ik begonnen met het bouwen met een cubus door te spelen met 3D-transform. Dit heb ik maandag geprobeerd in een codepen en dinsdag in mijn eindproject gewerkt waar ik het ook dynamisch heb kunnen maken door middel van custom properties en het gebruik van math. Als laatst heb ik nog met Sanne gekeken hoe ik een beveld edge kon maken en heb ik hiervoor uitendelijk gebruik gemaakt van de cos(45) regel in een calc.
 
-<img src="images/codepen3D.png" width="300" height="150">
+<img src="images/codepen3D.png" width="300" height="200">
 <!-- <img src="images/pokedex.jpg" width="300" height="150"> -->
 
 **Doel volgende week:**<br>
