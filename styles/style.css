@@ -4,7 +4,7 @@ body {
     /*width*/
     --base-y: calc(var(--base-pixel-size) * 3);
     /*height*/
-    --base-z: calc(var(--base-pixel-size) * 20);
+    --base-z: calc(var(--base-pixel-size) * 10);
     /*depth*/
 
 
@@ -16,6 +16,7 @@ body {
 
     perspective: 40em;
     perspective-origin: center center;
+    background-color: rgb(46, 46, 46);
 }
 
 body,
@@ -32,7 +33,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotateX(0deg) rotateY(-70deg);
+    transform: rotateX(-5deg) rotateY(-70deg);
     /* animation: rotation 10s linear infinite; */
 }
 
@@ -60,8 +61,6 @@ li:nth-of-type(1) {
     background: rgba(0, 0, 255, 0.7);
     height: calc(var(--base-y) / 2);
     transform: translateY(calc(var(--base-y) / -4)) translateZ(calc(var(--base-z) / 2));
-    /* position: relative; */
-    /* transform-origin: bottom; */
 }
 
 li:nth-of-type(1)::after {
@@ -71,9 +70,10 @@ li:nth-of-type(1)::after {
     height: calc(calc(var(--base-y) / 2) / cos(45deg));
     background: inherit;
     transform-origin: top;
-    /* bottom: 0; */
-    transform: rotateX(90deg);
-    /* translateY(calc(var(--base-y) / 4)); */
+    transform: 
+    translateY(1.8em)
+    /* translateY(calc(var(--base-y) / 2)) */
+    rotateX(-45deg);
 }
 
 /* Back */

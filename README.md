@@ -27,7 +27,7 @@ Optie 2: Pokédex Console: Een console met één scherm waarop je één of meerd
 Deze week ben ik begonnen met het bouwen met een cubus door te spelen met 3D-transform. Dit heb ik maandag geprobeerd in een codepen en dinsdag in mijn eindproject gewerkt waar ik het ook dynamisch heb kunnen maken door middel van custom properties en het gebruik van math. Als laatst heb ik nog met Sanne gekeken hoe ik een beveld edge kon maken en heb ik hiervoor uitendelijk gebruik gemaakt van de cos(45) regel in een calc.
 
 <img src="images/codepen3D.png" width="300" height="150">
-<!-- <img src="images/pokedex.jpg" width="300" height="150"> -->
+<img src="images/css-week2-voortgang.png" width="300" height="150">
 
 **Doel volgende week:**<br>
 - Onderkant en bovenkant afmaken en stijlen.
