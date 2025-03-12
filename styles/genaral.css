@@ -1,3 +1,43 @@
+body {
+
+  /* sizing */
+  --base-pixel-size: clamp(0.3em, 10vw, 1em);
+  --base-x: calc(var(--base-pixel-size) * 20); /*width*/
+  --base-y: calc(var(--base-pixel-size) * 3); /*height*/
+  --base-z: calc(var(--base-pixel-size) * 15); /*depth*/
+
+  --screen-width: calc(var(--base-x) * .7);
+  --screen-height: calc(var(--base-y) * 3.5);
+
+  --open-x:calc(var(--base-x) * 0.08);
+  --open-y:calc(var(--base-y) * 0.3);
+  --open-z:calc(var(--base-z) * 0.05);
+  /* colors */
+  --color-primary: oklch(38.64% 0.0886 58.43);  /* Dark Brown */
+  --color-secondary: oklch(49.01% 0.1082 62.01); /* Golden Brown */
+  --color-tertiary: oklch(40.92% 0.1007 45.42);  /* Medium Brown */
+  --color-accent: oklch(85.06% 0.112 76.12);  /* Light Tan */
+  --color-alert: oklch(58.84% 0.241462 29.2339);  /* Bright Red */
+
+  --color-dark:rgb(90, 90, 90);
+  --border-console: 0.0625em solid var(--color-primary);
+
+  margin: 0;
+  height: 100dvh;
+
+  display: grid;
+  place-items: center;
+
+  perspective: 40em;
+  perspective-origin: center center;
+  background-color: rgb(46, 46, 46);
+}
+
+body,
+body * {
+  transform-style: preserve-3d;
+}
+
 a {
     text-decoration: none;
   }
