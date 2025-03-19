@@ -19,7 +19,7 @@ Optie 2: Pokédex Console: Een console met één scherm waarop je één of meerd
 **Nieuw voor mij:**<br>
 <ul>
     <li>3D transform doormiddel van <code>transform-style: preserve-3d;</code></li>
-    <li>Cubus maken doormiddel van rotate en translate:<code>transform: rotateY(180deg) translateZ(calc(var(--base-z) / 2));</code></li>
+    <li>kubus maken doormiddel van rotate en translate:<code>transform: rotateY(180deg) translateZ(calc(var(--base-z) / 2));</code></li>
     <li>dynamische maken cubus door custom var met calc te gebruiken<code>height: calc(calc(var(--base-y) / 2) / cos(45deg));</code></li>
 </ul>
 
@@ -38,20 +38,24 @@ Deze week ben ik begonnen met het bouwen met een cubus door te spelen met 3D-tra
 
 **Nieuw voor mij:**<br>
 <ul>
-    <li>...<code>...</code></li>
-    <li>...<code>...</code></li>
-    <li>...<code>...</code></li>
+    <li>transform origin gebruiken en verplaatsen voor een 3d object<code>transform-origin: 50% calc(var(--base-y) / -2) calc(var(--base-z) / -2);</code></li>
 </ul>
 
 **Voortgang:**<br>
-...
+Maandag begon ik meteen met het stijlen van de console in de kleuren van donkey kong en heb deze in variable opgeslaan en toegepast.<br>
+<img src="images/dk-colors.png" width="300" height="150"><br>
 
-<img src="images/" width="300" height="150">
-<img src="images/" width="300" height="150">
+Nadat de onderkant basis helemaal klaar was heb ik de hele <code>ul</code> waarin het stond gekopieerd en er boven geplakt. Vervolgens heb ik deze met <code>rotate: z 180deg;</code> omgedraait en naar boven geschoven om hem op het onderdeel neer te leggen.<br>
+<img src="images/consolo-week3-1.png" width="300" height="150"><br>
+
+Dinsdag was ik begonnen met het maken van een animatie waarme je de console open en dicht kon klappen. Hiervoor wou ik eerst het heel moeilijk raar roteren en daarna verplaatsen, maar daarna kwam Sanne met de goede tip om naar de <code>transform-origin</code> te kijken. Hier worstelde ik wel eerst een beetje omdat het niet één vlak was maar een kubus met een middenpunt, dus moest ik de transform origin verplaatjes met calc en mijn var waardes. Dit duurde even en liep eerst lang tegen het probleem aan dat de ul een width had terwijl ik die op 0 had gezet. Uiteindelijk bleek het te komen door de <code>padding-inline-start</code> en moest deze op 0 staan, maar het was gelukt en had dit in een animatie gezet met keyframes en een 3d kubus button.<br>
+<img src="images/consolo-week3-2.png" width="300" height="150"><br>
 
 **Doel volgende week:**<br>
-- ...
-- ...
+- Interactie toevoegen (knoppen: links, recht, jump en smash)
+- Bijpassende title toevoegen
+- Alles goed nesten
+- puntjes op de i
 
 ## Week 4
 

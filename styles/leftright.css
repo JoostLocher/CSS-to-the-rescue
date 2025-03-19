@@ -17,8 +17,6 @@ body{
     &:has(#lr-7:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -14)); }
     &:has(#lr-8:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -16)); }
 }
-/* &:has(#lr-9:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(90% - var(--dk-size) / 2); } */
-/* &:has(#lr-10:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(100% - var(--dk-size)); } */
 
 
 body>section>ul:nth-of-type(2) section:nth-of-type(1) ul{
@@ -63,7 +61,7 @@ body>section>ul:nth-of-type(2) section:nth-of-type(1) ul{
             label {
                 width: var(--move-x);
                 height: var(--move-x);
-                /* border-radius: 50%; */
+                border-radius: 50%;
                 cursor: pointer;
             }
         }
@@ -104,9 +102,9 @@ body>section>ul:nth-of-type(2) section:nth-of-type(1) ul{
     }
 
 
-/* =============== */
-/* animation press */
-/* =============== */
+/* ====================== */
+/* button press animation */
+/* ====================== */
 
 body {
     &:has(#lr-1:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) { animation: druk-lr-top 1s forwards; }
