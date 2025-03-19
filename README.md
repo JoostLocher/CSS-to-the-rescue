@@ -34,6 +34,41 @@ Deze week ben ik begonnen met het bouwen met een cubus door te spelen met 3D-tra
 - Knoppen en shermen toevoegen.
 
 
+## Week 3
+
+**Nieuw voor mij:**<br>
+<ul>
+    <li>...<code>...</code></li>
+    <li>...<code>...</code></li>
+    <li>...<code>...</code></li>
+</ul>
+
+**Voortgang:**<br>
+...
+
+<img src="images/" width="300" height="150">
+<img src="images/" width="300" height="150">
+
+**Doel volgende week:**<br>
+- ...
+- ...
+
+## Week 4
+
+**Nieuw voor mij:**<br>
+<ul>
+    <li>...<code>...</code></li>
+    <li>...<code>...</code></li>
+    <li>...<code>...</code></li>
+</ul>
+
+**Voortgang:**<br>
+...
+
+<img src="images/" width="300" height="150">
+<img src="images/" width="300" height="150">
+
+
 ## Bronnen
 
 <ul>
@@ -41,6 +76,7 @@ Deze week ben ik begonnen met het bouwen met een cubus door te spelen met 3D-tra
     <li>img pokedex: https://nl.pinterest.com/pin/418060777921719484/</li>
     <li>3D cubus: https://codepen.io/shooft/pen/BaQLpQq?editors=1100, https://3dtransforms.desandro.com/cube</li>
     <li>3D transform: https://www.w3schools.com/css/css3_3dtransforms.asp</li>
+    <li>nonagon clip-path shape bron: https://bennettfeely.com/clippy/</li>
     <li>...</li>
     <li>...</li>
 </ul>
