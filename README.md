@@ -87,6 +87,7 @@ Het animeren van de buttons verliep ook niet soepel want de bovenkanten van de c
 als laatst heb ik ook nog een jump en smash knop toegevoegd met een daarbij passende animatie. Voor de title had ik een pixel font van google geimplenteerd.
 
 **Eindresultaat:**
+<br>
 <img src="images/week4-eind1.png" width="300" height="150"><br>
 <img src="images/week4-eind2.png" width="300" height="150"><br>
 
