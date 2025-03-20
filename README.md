@@ -38,7 +38,7 @@ Deze week ben ik begonnen met het bouwen met een cubus door te spelen met 3D-tra
 
 **Nieuw voor mij:**<br>
 <ul>
-    <li>transform origin gebruiken en verplaatsen voor een 3d object<code>transform-origin: 50% calc(var(--base-y) / -2) calc(var(--base-z) / -2);</code></li>
+    <li>transform origin gebruiken en verplaatsen voor een 3d object <code>transform-origin: 50% calc(var(--base-y) / -2) calc(var(--base-z) / -2);</code></li>
 </ul>
 
 **Voortgang:**<br>
@@ -61,17 +61,34 @@ Dinsdag was ik begonnen met het maken van een animatie waarme je de console open
 
 **Nieuw voor mij:**<br>
 <ul>
-    <li>...<code>...</code></li>
-    <li>...<code>...</code></li>
+    <li>3D cylinder <code>--radius: calc(var(--move-x) / 2 );</code><br>
+        <code>--n: 9;</code><br>
+        <code>--length: calc(var(--radius) * 2 * tan(180deg / var(--n)));</code><br>
+        <code>--angle: calc(360deg / var(--n));</code><br>
+        <code>transform: translateX(-50%) rotateY(calc(var(--angle) * var(--i))) translateZ(var(--radius));</code></li>
+    <li>Object bewegen door inputs en translate <code>&:has(#lr-2:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(30% - var(--dk-size) / 2); }</code></li>
     <li>...<code>...</code></li>
 </ul>
 
 **Voortgang:**<br>
-...
+Voor de laatste week begon ik met het maken van de beweeg knoppen. Hiervoor had ik even op het internet gekeken en kwam ik een css space invaders van Jon Slater tegen die doormiddel van inputs, labels en transforms objecten kon laten bewegen. Verder wist ik ook dat Elton ook zo iets had gemaakt en die bleek ook naar de codepen van Slater had gekeken. Elton heeft mij toen ook maandag hier mee samen even een codepen aangemaakt om de basis wat makkelijker uit te leggen. Dit heb ik vervolgens toegepast op mijn console.<br>
+<img src="images/week4-move-begin.png" width="300" height="150"><br>
 
-<img src="images/" width="300" height="150">
-<img src="images/" width="300" height="150">
+Tijdens de les van maandag was Julia Miocene ook te gast en had toen ook een 3d cylinder op haar youtube gezien die ik mogelijk kon gebruiken voor de ronde knoppen op mijn console. Ik heb dan ook de video gevolgd en een passende clip-path toegevoegd voor de boven vlak van de cylinder, want die had zijn niet. En met wat transforms op het onderflak geplaatst en samen gevoegd met de inputs voor het bewegen.<br>
+<img src="images/week4-move-buttons.png" width="300" height="150"><br>
 
+Dinsdag was ik begonnen met het animeren van de buttons en het juist verplaatsen van dk op het scherm. Bij beide liep ik op tegen veel opstakels. Zo heb ik veel geprobeert met verschillende manier om dk te verplaatsen, zie afb. hieronder:<br>
+<img src="images/week4-opstakel1.png" width="300" height="150"><br>
+
+Uiteindelijk heb ik met <code>right: x%</code> gedaan maar bij 100% kwam hij eerst uit het beeld, en als je dan in de calc 100% - size-dk deed was hij op 0% weer niet goed. Ik het dan maar ook oneven stappen in % gedaan maar visueel lijkt het gelijken stappen.
+
+Het animeren van de buttons verliep ook niet soepel want de bovenkanten van de cylinders zijn een before en after maar met translate in keyframes krijg ik ze niet op en neer, alleen werkt het wel als ik de hele ul pak maar waardoor ik niet maar 1 van de 1 naar benede krijg. Verder werkte de animaties alleen op de eerst keer van links en naar rechts bewegen...
+
+als laatst heb ik ook nog een jump en smash knop toegevoegd met een daarbij passende animatie. Voor de title had ik een pixel font van google geimplenteerd.
+
+**Eindresultaat:**
+<img src="images/week4-eind1.png" width="300" height="150"><br>
+<img src="images/week4-eind2.png" width="300" height="150"><br>
 
 ## Bronnen
 
@@ -80,7 +97,10 @@ Dinsdag was ik begonnen met het maken van een animatie waarme je de console open
     <li>img pokedex: https://nl.pinterest.com/pin/418060777921719484/</li>
     <li>3D cubus: https://codepen.io/shooft/pen/BaQLpQq?editors=1100, https://3dtransforms.desandro.com/cube</li>
     <li>3D transform: https://www.w3schools.com/css/css3_3dtransforms.asp</li>
-    <li>nonagon clip-path shape bron: https://bennettfeely.com/clippy/</li>
-    <li>...</li>
-    <li>...</li>
+    <li>color pallet dk: https://htmlcolors.com/palette/905/donkey-kong</li>
+    <li>dk laten bewegen: Elton Irokromo & https://codepen.io/jonslater204/pen/LYWQbMa?editors=1100</li>
+    <li>3D cylinder van Julia Miocene: https://codepen.io/miocene/pen/poXJOpo*/</li>
+    <li>nonagon clip-path shape: https://bennettfeely.com/clippy/</li>
+    <li>color emoji: https://barrd.dev/article/adding-colour-to-an-emoji-using-different-css-techniques/</li>
+    <li>font: https://fonts.google.com/specimen/Pixelify+Sans?preview.text=DONKEY%20KONG%20II</li>
 </ul>

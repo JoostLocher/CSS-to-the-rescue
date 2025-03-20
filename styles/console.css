@@ -8,7 +8,7 @@ body>section {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotateX(-25deg) rotateY(0deg);
+    transform: rotateX(-25deg) rotateY(-20deg);
 
     /* topside and bottomside console */
     >ul {
@@ -116,13 +116,17 @@ body>section {
             li:nth-of-type(6) {
                 background-color: var(--color-accent);
                 box-shadow: inset 0 0 0 10px var(--color-primary);
-                display: grid;
-                grid: center;
-
+                display: flex;
+                flex-direction: column;
+                
                 h1,
                 img {
                     rotate: z 180deg;
                     justify-self: center;
+                }
+
+                img {
+                    width: calc(var(--dk-size) * 1.5);
                 }
             }
 
@@ -145,5 +149,20 @@ body>section {
             }
         }
 
+
+        &:nth-of-type(2) > li:nth-of-type(5) {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* align-items: center; */
+                /* height: 100%;  */
+
+                >section {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            
+        }
     }
 }

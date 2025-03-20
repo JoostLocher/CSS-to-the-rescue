@@ -5,7 +5,7 @@
 body {
 
   /* sizing */
-  --base-pixel-size: clamp(0.3em, 10vw, 1em);
+  --base-pixel-size: 1em;
   --base-x: calc(var(--base-pixel-size) * 20); /* width */
   --base-y: calc(var(--base-pixel-size) * 3); /* height */
   --base-z: calc(var(--base-pixel-size) * 15); /* depth */
@@ -19,20 +19,28 @@ body {
 
   --move-x: calc(var(--base-x) * .1);
 
-  /* --dk-size: calc(var(--base-x) * .1); */
+  /* 3d cylinder */
+  --radius: calc(var(--move-x) / 2 );
+  --n: 9;
+  --length: calc(var(--radius) * 2 * tan(180deg / var(--n)));
+  --angle: calc(360deg / var(--n));
   
   --dk-size: max(calc(var(--base-z) / 6), calc(var(--base-x) / 10));
   
 
   /* colors */
+  /* dk pallet: https://htmlcolors.com/palette/905/donkey-kong */
   --color-primary: oklch(38.64% 0.0886 58.43);  /* Dark Brown */
   --color-secondary: oklch(49.01% 0.1082 62.01); /* Golden Brown */
   --color-tertiary: oklch(40.92% 0.1007 45.42);  /* Medium Brown */
   --color-accent: oklch(85.06% 0.112 76.12);  /* Light Tan */
   --color-alert: oklch(58.84% 0.241462 29.2339);  /* Bright Red */
 
+  --color-white: #fff;
   --color-dark:rgb(33, 33, 33);
   --border-console: 0.0625em solid var(--color-primary);
+
+ 
 
   margin: 0;
   height: 100dvh;
@@ -40,7 +48,7 @@ body {
   display: grid;
   place-items: center;
 
-  perspective: 40em;
+  perspective: 80em;
   perspective-origin: center center;
   background-color: var(--color-dark);
 }
@@ -59,6 +67,13 @@ ul {
   padding-inline-start: 0;
 }
 
+
 input[type="checkbox"] {
   display: none;
+}
+
+/* color emoji bron: https://barrd.dev/article/adding-colour-to-an-emoji-using-different-css-techniques/*/ 
+span {
+  color: transparent;
+  text-shadow: 0 0 0 var(--color-alert);
 }
