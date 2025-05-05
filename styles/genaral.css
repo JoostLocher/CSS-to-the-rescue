@@ -68,8 +68,20 @@ ul {
 }
 
 
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
   display: none;
+}
+
+body:has(#lr-0:checked) label[for="lr-0"],
+body:has(#lr-1:checked) label[for="lr-1"],
+body:has(#lr-2:checked) label[for="lr-2"],
+body:has(#lr-3:checked) label[for="lr-3"],
+body:has(#lr-4:checked) label[for="lr-4"],
+body:has(#lr-5:checked) label[for="lr-5"],
+body:has(#lr-6:checked) label[for="lr-6"],
+body:has(#lr-7:checked) label[for="lr-7"],
+body:has(#lr-8:checked) label[for="lr-8"] {
+  cursor: default;
 }
 
 /* color emoji bron: https://barrd.dev/article/adding-colour-to-an-emoji-using-different-css-techniques/*/ 

@@ -2,26 +2,107 @@
 /* dk move left right */
 /* ================== */
 
-body{
-    &:has(#lr-1:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(18% - var(--dk-size) / 2); }
-    &:has(#lr-2:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(30% - var(--dk-size) / 2); }
-    &:has(#lr-3:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(40% - var(--dk-size) / 2); }
-    &:has(#lr-4:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(50% - var(--dk-size) / 2); }
-    &:has(#lr-5:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(60% - var(--dk-size) / 2); }
-    &:has(#lr-6:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(70% - var(--dk-size) / 2); }
-    &:has(#lr-7:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(83% - var(--dk-size) / 2); }
-    &:has(#lr-8:checked) >section>ul:nth-of-type(1)>li:nth-of-type(7) img { right: calc(100% - var(--dk-size)); }
+  body:has([value="pos0"]:checked) { --position: 0;}
+  body:has([value="pos1"]:checked) { --position: 1;}
+  body:has([value="pos2"]:checked) { --position: 2;}
+  body:has([value="pos3"]:checked) { --position: 3;}
+  body:has([value="pos4"]:checked) { --position: 4;}
+  body:has([value="pos5"]:checked) { --position: 5;}
+  body:has([value="pos6"]:checked) { --position: 6;}
+  body:has([value="pos7"]:checked) { --position: 7;}
+  body:has([value="pos8"]:checked) { --position: 8;}
 
-    &:has(#lr-1:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -2)); }
-    &:has(#lr-2:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -4)); }
-    &:has(#lr-3:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -6)); }
-    &:has(#lr-4:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -8)); }
-    &:has(#lr-5:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -10)); }
-    &:has(#lr-6:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -12)); }
-    &:has(#lr-7:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -14)); }
-    &:has(#lr-8:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li { transform: translateX(calc(var(--move-x) * -16)); }
-}
+  @container style(--position: 0) {
+    section > ul:nth-of-type(1) > li:nth-of-type(7) img {
+      position: absolute;
+      right: 0;
+    }
 
+    section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li {
+      left: var(--move-x);
+    }
+  }
+
+  @container style(--position: 1) {
+    section > ul:nth-of-type(1) > li:nth-of-type(7) img {
+      position: absolute;
+      right: calc(18% - var(--dk-size) / 2);
+    }
+  
+    section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li {
+      left: 0;
+    }
+  }
+
+  @container style(--position: 2) {
+    section > ul:nth-of-type(1) > li:nth-of-type(7) img {
+      position: absolute;
+      right: calc(30% - var(--dk-size) / 2);
+    }
+    section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li {
+      transform: translateX(calc(var(--move-x) * -1));
+    }
+  }
+  
+  @container style(--position: 3) {
+    section > ul:nth-of-type(1) > li:nth-of-type(7) img {
+      position: absolute;
+      right: calc(40% - var(--dk-size) / 2);
+    }
+    section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li {
+      transform: translateX(calc(var(--move-x) * -2));
+    }
+  }
+
+  @container style(--position: 4) {
+    section > ul:nth-of-type(1) > li:nth-of-type(7) img {
+      position: absolute;
+      right: calc(50% - var(--dk-size) / 2);
+    }
+    section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li {
+      transform: translateX(calc(var(--move-x) * -3));
+    }
+  }
+  
+  @container style(--position: 5) {
+    section > ul:nth-of-type(1) > li:nth-of-type(7) img {
+      position: absolute;
+      right: calc(60% - var(--dk-size) / 2);
+    }
+    section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li {
+      transform: translateX(calc(var(--move-x) * -4));
+    }
+  }
+  
+  @container style(--position: 6) {
+    section > ul:nth-of-type(1) > li:nth-of-type(7) img {
+      position: absolute;
+      right: calc(70% - var(--dk-size) / 2);
+    }
+    section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li {
+      transform: translateX(calc(var(--move-x) * -5));
+    }
+  }
+  
+  @container style(--position: 7) {
+    section > ul:nth-of-type(1) > li:nth-of-type(7) img {
+      position: absolute;
+      right: calc(83% - var(--dk-size) / 2);
+    }
+    section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li {
+      transform: translateX(calc(var(--move-x) * -6));
+    }
+  }
+  
+  @container style(--position: 8) {
+    section > ul:nth-of-type(1) > li:nth-of-type(7) img {
+      position: absolute;
+      right: calc(100% - var(--dk-size));
+    }
+    section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) li {
+      transform: translateX(calc(var(--move-x) * -7));
+    }
+  }
 
 body>section>ul:nth-of-type(2) section:nth-of-type(1) ul{
 
@@ -62,9 +143,11 @@ body>section>ul:nth-of-type(2) section:nth-of-type(1) ul{
 
         >li {
             position: absolute;
-            left: calc(var(--move-x) * 2);
+            /* left: var(--move-x); */
+            /* === gap en left calc weg voor radio button versie === */
+            /* left: calc(var(--move-x) * 2); */
+            /* gap: var(--move-x); */
             display: flex;
-            gap: var(--move-x);
 
             label {
                 width: var(--move-x);
@@ -107,75 +190,28 @@ body>section>ul:nth-of-type(2) section:nth-of-type(1) ul{
 /* button press animation */
 /* ====================== */
 
-body {
-    &:has(#lr-1:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) { animation: druk-lr-top .3s forwards; }
-    &:has(#lr-1:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(2) { animation: druk-lr-base .3s forwards; }
-    &:has(#lr-1:not(:checked)) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) { animation: druk-lr-top2 .3s forwards; }
-    &:has(#lr-1:not(:checked)) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(3) { animation: druk-lr-base2 .3s forwards; }
-    
-
-    /* werkt niet meer met meerderen? */
-    /* &:has(#lr-2:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) { animation: druk-lr-top3 1s forwards; }
-    &:has(#lr-2:checked) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(2) { animation: druk-lr-base3 1s forwards; }
-    &:has(#lr-2:not(:checked)) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) { animation: druk-lr-top4 1s forwards; }
-    &:has(#lr-2:not(:checked)) >section>ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(3) { animation: druk-lr-base4 1s forwards; } */
-}
-
-@keyframes druk-lr-top {
-    0% {
-        transform: translateZ(calc(var(--move-x) / 4));
-    }
-
-    50% {
-        transform: translateZ( - calc(var(--move-x) / 2));
-    }
-
-    100% {
-        transform: translateZ(calc(var(--move-x) / 4));
-    }
-}
-
-@keyframes druk-lr-base {
-    0% {
-        transform: translateX(var(--move-x)) rotateX(-90deg) translatey(calc(var(--move-x) / -8));
-    }
-
-    50% {
-        transform: translateX(var(--move-x)) rotateX(-90deg) translatey(calc(var(--move-x) / 16));
-    }
-
-    100% {
-        transform: translateX(var(--move-x)) rotateX(-90deg) translatey(calc(var(--move-x) / -8));
-    }
-}
-
-@keyframes druk-lr-top2 {
-    0% {
-        transform: translateZ(calc(var(--move-x) / 4));
-    }
-
-    50% {
-        transform: translateZ( - calc(var(--move-x) / 2));
-    }
-
-    100% {
-        transform: translateZ(calc(var(--move-x) / 4));
-    }
-}
+  body:has(#lr-1:checked) > section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(1) {
+    animation: druk-lr-top .3s forwards;
+  }
+  
+  body:has(#lr-1:checked) > section > ul:nth-of-type(2) section:nth-of-type(1) ul:nth-of-type(2) {
+    animation: druk-lr-base .3s forwards;
+  }
 
 
-@keyframes druk-lr-base2 {
-    0% {
-        transform: translateX(calc(var(--move-x) * -1)) rotateX(-90deg) translatey(calc(var(--move-x) / -8));
-    }
+/* ============ */
+/* KEYFRAMES    */
+/* ============ */
 
-    50% {
-        transform: translateX(calc(var(--move-x) * -1)) rotateX(-90deg) translatey(calc(var(--move-x) / 16));
-    }
-
-    100% {
-        transform: translateX(calc(var(--move-x) * -1)) rotateX(-90deg) translatey(calc(var(--move-x) / -8));
-    }
-}
-
-
+  @keyframes druk-lr-top {
+    0% { transform: translateZ(calc(var(--move-x) / 4)); }
+    50% { transform: translateZ(-calc(var(--move-x) / 2)); }
+    100% { transform: translateZ(calc(var(--move-x) / 4)); }
+  }
+  
+  @keyframes druk-lr-base {
+    0% { transform: translateX(var(--move-x)) rotateX(-90deg) translateY(calc(var(--move-x) / -8)); }
+    50% { transform: translateX(var(--move-x)) rotateX(-90deg) translateY(calc(var(--move-x) / 16)); }
+    100% { transform: translateX(var(--move-x)) rotateX(-90deg) translateY(calc(var(--move-x) / -8)); }
+  }
+  
