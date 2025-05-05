@@ -100,8 +100,9 @@ Voor de herkansing moest ik nog een 2e CSS architecture feature toevoegen. Ik ha
   body:has([value="pos1"]:checked) { --position: 1;}
   body:has([value="pos2"]:checked) { --position: 2;}
 </code>
-
+<br>
 Hierop volgend voor elk een container style geschreven met daarin de code die ik al had voor het bewegen van de img en labels. <code> @container style(--position: 1) {} </code> 
+
 
 ## Bronnen
 
@@ -116,4 +117,5 @@ Hierop volgend voor elk een container style geschreven met daarin de code die ik
     <li>nonagon clip-path shape: https://bennettfeely.com/clippy/</li>
     <li>color emoji: https://barrd.dev/article/adding-colour-to-an-emoji-using-different-css-techniques/</li>
     <li>font: https://fonts.google.com/specimen/Pixelify+Sans?preview.text=DONKEY%20KONG%20II</li>
+    <li>style query: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_size_and_style_queries</li>
 </ul>
