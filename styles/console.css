@@ -142,7 +142,7 @@ body>section {
                     rotate: z 180deg;
                     position: absolute;
                     width: var(--dk-size);
-                    right: 0;
+                    /* right: 0; */
                     max-width: 100%;
                     
                 }
