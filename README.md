@@ -91,6 +91,18 @@ als laatst heb ik ook nog een jump en smash knop toegevoegd met een daarbij pass
 <img src="images/week4-eind1.png" width="300" height="150"><br>
 <img src="images/week4-eind2.png" width="300" height="150"><br>
 
+## Herkansing
+
+Voor de herkansing moest ik nog een 2e CSS architecture feature toevoegen. Ik had al CCS nesting en heb nu style queries toegevoegd. Dit heb ik gedaan voor het bewegen van de DK-img Hiervoor had ik eerst mijn checkboxen naar radio buttons veranderd en daarna met has een variable aan elk toegevoegd:
+
+<code>
+  body:has([value="pos0"]:checked) { --position: 0;}
+  body:has([value="pos1"]:checked) { --position: 1;}
+  body:has([value="pos2"]:checked) { --position: 2;}
+</code>
+
+Hierop volgend voor elk een container style geschreven met daarin de code die ik al had voor het bewegen van de img en labels. <code> @container style(--position: 1) {} </code> 
+
 ## Bronnen
 
 <ul>
